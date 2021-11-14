@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fjalla+One&family=Montserrat:wght@400;700&family=Zen+Kaku+Gothic+Antique&display=swap');
+/*The asterisk is used to select all the elements on the page*/
+*,
+*::before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Background colour (purple gradient) */
+body {
+    background: linear-gradient(
+    145deg,
+    #6f6df4,
+    #4c46f5);
+    padding: 50px;
+}
+/* Form background (black) */
+
+.wrapper{
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 1000px;
+    background-color: black;
+    padding: 25px;
+    box-shadow: 3px 3px 2px rgba(0,0,0,0.125);
+    border-radius: 5px;
+}
+/* End of the form background */
+
+.wrapper .header {
+    margin-bottom: 10px;
+    color: 	#20b2aa;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+#description {
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+/************ Form **************/
+
+select, option, input, label, button {
+    padding: 0.2rem 1rem;
+    font-size: 1rem;
+    color: inherit;
+    margin: 3px;
+}
+
+label {
+    color: #e0ffff;
+}
+
+.form-box{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea {
+    flex-basis: 100%;
+    margin: 4px;
+    border-radius: 3px;
+    border: none;
+}
+
+.submit-button {
+    border-radius: 3px;
+    border: none;
+    background: #20b2aa;
+    box-shadow: 3px 3px 2px rgba(0,0,0,0.125);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
