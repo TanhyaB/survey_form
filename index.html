@@ -1,1 +1,114 @@
-<h1 id="title">Our home brewed Roots Beverage</h1>
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/survey-form.css">
+</head>
+<body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<div class="wrapper">
+    <div class="header">
+        <h1 id="title">Roots Beverage Survey</h1>
+    </div>
+    <p id="description">
+        Thank you for taking the time to fill in the Roots Survey! We
+        hope you enjoyed our samples.</p>
+
+<!-- Start of form-box -->
+    <form id="survey-form" class="form">
+        <div class="form-box">
+            <label id="name-label">Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-box">
+            <label id="email-label">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-box">
+            <label id="number-label">Age</label>
+            <input type="number" id="number" name="number" min="18" max="100" placeholder="Age" required>
+        </div>
+
+        <div class="form-box">
+            <label>Which flavour did you like best?</label>
+            <select id="dropdown" name="type">
+                <option value=" " selected disabled>Select an option</option>
+                <option value="blueberry">Blueberry</option>
+                <option value="peach">Peach</option>
+            </select>
+        </div>
+
+        <div class="form-box">
+            <label>Based on sample testing would you purchase these drinks?</label>
+            <label><input type="radio" id="sample-testing-yes" name="sample-testing" value="Yes">Yes</label>
+        </div>
+
+        <div class="form-box">
+            <label><input type="radio" id="sample-testing-no" name="sample-testing" value="No">No</label>
+        </div>
+
+        <div class="form-box">
+            <label>What is your favourite type of drink?</label><br>
+            <select id="favourite-drink" name="type">
+                <option value=" " selected disabled>Select an option</option>
+                <option value="non">Non Alcoholic (soft drinks)</option>
+                <option value="low">Low Alcoholic (low-booze beer, mocktails etc)</option>
+                <option value="alcohol">Alcoholic (beer, spirits etc)</option>
+            </select>
+        </div>
+
+        <div class="form-box">
+            <label>When choosing an alcoholic drink what influences your decision?</label><br><br>
+            <label><input type="checkbox" name="prefer" value="taste">Taste</label>
+        </div>
+
+        <div class="form-box">
+            <label><input type="checkbox" name="prefer" value="calories">Calories</label>
+        </div>
+
+        <div class="form-box">
+            <label><input type="checkbox" name="prefer" value="caffeine">Caffeine</label>
+        </div>
+
+        <div class="form-box">
+            <label><input type="checkbox" name="prefer" value="free-from">Free from artifical flavourings and colourings</label>
+        </div>
+
+        <div class="form-box">
+            <label><input type="checkbox" name="prefer" value="availability">Availability</label>
+        </div>
+
+        <div class="form-box">
+            <label><input type="checkbox" name="prefer" value="price">Price</label>
+        </div>
+
+        <div class="form-box">
+            <label><input type="checkbox" name="prefer" value="i-don't-drink">I don't drink alcoholic drinks</label>
+        </div>
+
+        <div class="form-box">
+            <label><input type="checkbox" name="prefer" value="other">Other (please specify)</label>
+        </div>
+
+        <div class="form-box">
+            <label><input type="text" name="other" name="other"></label>
+        </div>
+
+        <div class="form-box">
+        <label>We would love to hear any comments or suggestions.</label>
+        <textarea id="comments" name="comments" placeholder="Enter your comment here.."></textarea><br>
+        </div>
+
+        <div class="form-box">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
